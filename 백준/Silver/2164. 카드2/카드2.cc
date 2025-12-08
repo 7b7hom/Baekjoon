@@ -17,16 +17,13 @@ int main() {
         q.push(i);
     }
 
-    while(q.size() > 2) {
+    while(q.size() != 1) {
         q.pop();
         int x = q.front();
         //cout << "x=" << x;
         q.pop();
         q.push(x);
         // q.front()를 x 변수에 저장하고 pop을 한번 더. 그다음에 q.push(x)
-    }
-    if (q.size() == 2) {
-        q.pop();
     }
 
     cout << q.front();
